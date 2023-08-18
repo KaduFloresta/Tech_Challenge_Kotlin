@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Tech Challenge Kotlin</string>
+
+    <!--    Main Activity-->
+    <string name="text_email_title">Email</string>
+    <string name="text_age_title">Age</string>
+    <string name="text_id_title">Id</string>
+
+    <string name="h_scrollview_description1">First users list.</string>
+    <string name="h_scrollview_description2">Second users list.</string>
+    <string name="h_scrollview_description3">Third list.</string>
+    <string name="h_scrollview_description4">Forth list.</string>
+    <string name="h_scrollview_description5">Fifth list.</string>
+</resources>
