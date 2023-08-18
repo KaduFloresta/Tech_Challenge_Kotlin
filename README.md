@@ -1,14 +1,13 @@
 <h3> Author: Kadu Floresta. <img src="https://github.com/KaduFloresta/KaduFloresta/blob/main/img/Hi.gif?raw=true" width="25"></h3>
-<img align="right" alt="GIF" src="https://github.com/KaduFloresta/KaduFloresta/blob/main/img/gif2.gif?raw=true" width="470";/>
+<img align="right" alt="GIF" src="https://github.com/KaduFloresta/KaduFloresta/blob/main/img/gif2.gif?raw=true" width="420";/>
 
 <a href="https://www.linkedin.com/in/kadufloresta/">
  <img src="https://github.com/KaduFloresta/KaduFloresta/blob/main/img/profile.gif?raw=true" width="120px; alt=""/></b></a>  
  <br>
  
 <h4>GitHub!</h4>
- <code><a href="https://github.com/KaduFloresta" title="HomeGit">🏠 - Home</a><br></code><br>
- <code><a href="https://github.com/KaduFloresta?tab=repositories" title="RepoGit">📂 - Repositories</a><br></code>
- 
+ <code><a href="https://github.com/KaduFloresta" title="HomeGit">Home</a><br></code><br>
+ <code><a href="https://github.com/KaduFloresta?tab=repositories" title="RepoGit">Repositories</a><br></code>
 <br>
 
 <h4>Find me on the WEB!</h4>
