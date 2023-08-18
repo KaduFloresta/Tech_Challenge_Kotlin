@@ -20,6 +20,7 @@
 - [X] Screen design.
 - [ ] Card design.
 - [ ] Toolbar (Logo).
+- [X] Get the details point by point.
 - [X] Test on an Android device.
 ---
 
