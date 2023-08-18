@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <HorizontalScrollView
+                android:id="@+id/scrollView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/h_scrollview_description1"
+                app:layout_constraintHeight_percent="0.2">
+
+                <LinearLayout
+                    android:id="@+id/cardContainer1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="16dp" />
+            </HorizontalScrollView>
+
+            <HorizontalScrollView
+                android:id="@+id/scrollView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/h_scrollview_description2"
+                app:layout_constraintHeight_percent="0.2"
+                tools:layout_editor_absoluteY="32dp">
+
+                <LinearLayout
+                    android:id="@+id/cardContainer2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="16dp" />
+            </HorizontalScrollView>
+
+            <HorizontalScrollView
+                android:id="@+id/scrollView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/h_scrollview_description3"
+                app:layout_constraintHeight_percent="0.2"
+                tools:layout_editor_absoluteX="190dp"
+                tools:layout_editor_absoluteY="64dp">
+
+                <LinearLayout
+                    android:id="@+id/cardContainer3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="16dp" />
+            </HorizontalScrollView>
+
+            <HorizontalScrollView
+                android:id="@+id/scrollView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/h_scrollview_description4"
+                app:layout_constraintHeight_percent="0.2"
+                tools:layout_editor_absoluteX="190dp"
+                tools:layout_editor_absoluteY="96dp">
+
+                <LinearLayout
+                    android:id="@+id/cardContainer4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="16dp" />
+            </HorizontalScrollView>
+
+            <HorizontalScrollView
+                android:id="@+id/scrollView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/h_scrollview_description5"
+                app:layout_constraintHeight_percent="0.2"
+                tools:layout_editor_absoluteX="190dp"
+                tools:layout_editor_absoluteY="128dp">
+
+                <LinearLayout
+                    android:id="@+id/cardContainer5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="16dp" />
+            </HorizontalScrollView>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
