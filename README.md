@@ -1,22 +1,27 @@
 <h3> Author: Kadu Floresta. <img src="https://github.com/KaduFloresta/KaduFloresta/blob/main/img/Hi.gif?raw=true" width="25"></h3>
-<img align="right" alt="GIF" src="https://github.com/KaduFloresta/KaduFloresta/blob/main/img/gif2.gif?raw=true" width="420";/>
+
 
 <a href="https://www.linkedin.com/in/kadufloresta/">
  <img src="https://github.com/KaduFloresta/KaduFloresta/blob/main/img/profile.gif?raw=true" width="120px; alt=""/></b></a>  
  <br>
  
-<h4>GitHub!</h4>
- <code><a href="https://github.com/KaduFloresta" title="HomeGit">Home</a><br></code><br>
- <code><a href="https://github.com/KaduFloresta?tab=repositories" title="RepoGit">Repositories</a><br></code>
-<br>
-
-<h4>Find me on the WEB!</h4>
-
-[![Facebook Badge](https://img.shields.io/badge/-Kadu_Floresta-lightblue?style=flat-square&logo=Facebook&logoColor=white&link=https://www.facebook.com/kadu.floresta)](https://www.facebook.com/kadu.floresta)
-[![Twitter Badge](https://img.shields.io/badge/-@kadu_kururu-1ca0f1?style=flat-square&labelColor=1ca0f1&logo=twitter&logoColor=white&link=https://twitter.com/kadu_kururu)](https://twitter.com/kadu_kururu)
-<br>
 [![Linkedin Badge](https://img.shields.io/badge/-Kadu_Floresta-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/kadufloresta/)](https://www.linkedin.com/in/kadufloresta/)
 [![Gmail Badge](https://img.shields.io/badge/-cefloresta1@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:cefloresta1@gmail.com)](mailto:cefloresta1@gmail.com)
+
+---
+### Software Progress
+- [X] Connect to API.
+- [X] Create component to receive the data.
+- [X] Data transfer from API.
+- [X] Cards and Scrolls.
+- [ ] Edit implement.
+- [X] Delete implement.
+- [X] Fix XML alerts.
+- [X] Screen design.
+- [ ] Card design.
+- [ ] Toolbar (Logo).
+- [X] Test on an Android device.
+---
 
 # Task Description:
 ### As part of the interview process, we have prepared a technical challenge to evaluate your Kotlin skills.The challenge involves developing an app screen that consumes a RESTful API and displays user data in a card with horizontal scrolling. Each scroll should display 10 cards.
