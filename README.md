@@ -1,17 +1,17 @@
-<h2> Author: Kadu Floresta. <img src="https://github.com/KaduFloresta/KaduFloresta/blob/main/img/Hi.gif?raw=true" width="25"></h2>
+<h3> Author: Kadu Floresta. <img src="https://github.com/KaduFloresta/KaduFloresta/blob/main/img/Hi.gif?raw=true" width="25"></h3>
 <img align="right" alt="GIF" src="https://github.com/KaduFloresta/KaduFloresta/blob/main/img/gif2.gif?raw=true" width="470";/>
 
 <a href="https://www.linkedin.com/in/kadufloresta/">
  <img src="https://github.com/KaduFloresta/KaduFloresta/blob/main/img/profile.gif?raw=true" width="120px; alt=""/></b></a>  
  <br>
  
-<h3>GitHub!</h3>
+<h4>GitHub!</h4>
  <code><a href="https://github.com/KaduFloresta" title="HomeGit">🏠 - Home</a><br></code><br>
  <code><a href="https://github.com/KaduFloresta?tab=repositories" title="RepoGit">📂 - Repositories</a><br></code>
  
 <br>
 
-<h3>Find me on the WEB!</h3>
+<h4>Find me on the WEB!</h4>
 
 [![Facebook Badge](https://img.shields.io/badge/-Kadu_Floresta-lightblue?style=flat-square&logo=Facebook&logoColor=white&link=https://www.facebook.com/kadu.floresta)](https://www.facebook.com/kadu.floresta)
 [![Twitter Badge](https://img.shields.io/badge/-@kadu_kururu-1ca0f1?style=flat-square&labelColor=1ca0f1&logo=twitter&logoColor=white&link=https://twitter.com/kadu_kururu)](https://twitter.com/kadu_kururu)
