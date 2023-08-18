@@ -2,11 +2,14 @@ package com.example.techchallengekotlin
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
+import android.view.ViewGroup
 import android.widget.LinearLayout
-import android.widget.TextView
+import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
 import com.example.techchallengekotlin.api.ApiServiceFactory
+import com.example.techchallengekotlin.data.UserData
 import com.example.techchallengekotlin.databinding.ActivityMainBinding
+import com.example.techchallengekotlin.databinding.CardLayoutBinding
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
@@ -19,6 +22,11 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        supportActionBar?.hide()
+
+        setSupportActionBar(binding.customToolbar)
+        supportActionBar?.setDisplayShowTitleEnabled(false)
 
         CoroutineScope(Dispatchers.IO).launch {
             fetchUserDataFromApi()
@@ -36,11 +44,11 @@ class MainActivity : AppCompatActivity() {
 
                 runOnUiThread {
                     val groupIds = listOf(
-                        R.id.cardContainer1,
-                        R.id.cardContainer2,
-                        R.id.cardContainer3,
-                        R.id.cardContainer4,
-                        R.id.cardContainer5
+                        binding.cardContainer1.id,
+                        binding.cardContainer2.id,
+                        binding.cardContainer3.id,
+                        binding.cardContainer4.id,
+                        binding.cardContainer5.id
                     )
 
                     val usersPerGroup = userDataList.size / groupIds.size
@@ -49,19 +57,24 @@ class MainActivity : AppCompatActivity() {
                     for ((index, userData) in userDataList.withIndex()) {
                         if (currentGroupIndex < groupIds.size) {
                             val groupId = groupIds[currentGroupIndex]
-                            val groupLayout = findViewById<LinearLayout>(groupId)
-
+                            val groupLayout = binding.root.findViewById<LinearLayout>(groupId)
                             val cardLayout =
                                 layoutInflater.inflate(R.layout.card_layout, groupLayout, false)
-                            val name = cardLayout.findViewById<TextView>(R.id.text_name)
-                            val email = cardLayout.findViewById<TextView>(R.id.text_email)
-                            val age = cardLayout.findViewById<TextView>(R.id.text_age)
-                            val id = cardLayout.findViewById<TextView>(R.id.text_id)
 
-                            name.text = userData.name
-                            email.text = userData.email
-                            age.text = userData.age.toString()
-                            id.text = userData.id.toString()
+                            val cardBinding = CardLayoutBinding.bind(cardLayout)
+
+                            cardBinding.textName.text = userData.name
+                            cardBinding.textEmail.text = userData.email
+                            cardBinding.textAge.text = userData.age.toString()
+                            cardBinding.textId.text = userData.id.toString()
+
+                            cardBinding.iconEdit.setOnClickListener {
+//                                enterEditMode(cardBinding)
+                            }
+
+                            cardBinding.iconDelete.setOnClickListener {
+                                showDeleteConfirmationDialog(userData, cardBinding)
+                            }
 
                             groupLayout.addView(cardLayout)
 
@@ -72,14 +85,33 @@ class MainActivity : AppCompatActivity() {
                     }
                 }
             } else {
-                Log.e(
-                    "API_ERROR",
-                    "Error fetching user data from API: ${response.code()} - ${response.message()}"
-                )
+                Toast.makeText(this, "Erro: layout de grupo não encontrado", Toast.LENGTH_SHORT)
+                    .show()
             }
         } catch (e: Exception) {
-            Log.e("API_ERROR", "Error fetching user data from API: ${e.message}")
-            // Lidar com erros, como problemas de conexão, aqui
+            Toast.makeText(this, "Ocorreu um erro: " + e.message, Toast.LENGTH_SHORT).show()
         }
     }
+
+    private fun enterEditMode(cardBinding: CardLayoutBinding) {
+        // modo de edição
+    }
+
+    private fun showDeleteConfirmationDialog(userData: UserData, cardBinding: CardLayoutBinding) {
+        val alertDialogBuilder = AlertDialog.Builder(this)
+        alertDialogBuilder.setTitle("Confirmation")
+        alertDialogBuilder.setMessage("Are you sure you want to delete this card?")
+
+        alertDialogBuilder.setPositiveButton("Yes") { _, _ ->
+            val parentLayout = cardBinding.root.parent as? ViewGroup
+            parentLayout?.removeView(cardBinding.root)
+            // remover o card dos dados
+        }
+
+        alertDialogBuilder.setNegativeButton("No") { _, _ ->
+        }
+
+        alertDialogBuilder.show()
+    }
+
 }

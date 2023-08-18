@@ -8,7 +8,10 @@
 
     <string name="h_scrollview_description1">First users list.</string>
     <string name="h_scrollview_description2">Second users list.</string>
-    <string name="h_scrollview_description3">Third list.</string>
-    <string name="h_scrollview_description4">Forth list.</string>
-    <string name="h_scrollview_description5">Fifth list.</string>
+    <string name="h_scrollview_description3">Third users list.</string>
+    <string name="h_scrollview_description4">Forth users list.</string>
+    <string name="h_scrollview_description5">Fifth users list.</string>
+    <string name="logo_description">Company logo.</string>
+    <string name="ic_edit_description">Edit user icon.</string>
+    <string name="ic_delete_description">Delete user icon.</string>
 </resources>

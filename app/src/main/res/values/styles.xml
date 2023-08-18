@@ -4,6 +4,7 @@
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="android:statusBarColor">@color/main_gray</item>
         <item name="toolbarStyle">@style/ToolbarStyle</item>
+        <item name="windowActionBar">false</item>
     </style>
 
     <style name="ToolbarStyle" parent="Widget.AppCompat.Toolbar">
