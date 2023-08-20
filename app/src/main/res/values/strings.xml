@@ -1,17 +1,27 @@
 <resources>
     <string name="app_name">Tech Challenge Kotlin</string>
 
-    <!--    Main Activity-->
+    <!--    Components Tag-->
+    <string name="text_name_title">\Name</string>
     <string name="text_email_title">Email</string>
     <string name="text_age_title">Age</string>
     <string name="text_id_title">Id</string>
+    <string name="text_dialog_title">User Update</string>
 
+    <!--    Descriptions-->
     <string name="h_scrollview_description1">First users list.</string>
     <string name="h_scrollview_description2">Second users list.</string>
     <string name="h_scrollview_description3">Third users list.</string>
     <string name="h_scrollview_description4">Forth users list.</string>
     <string name="h_scrollview_description5">Fifth users list.</string>
+
     <string name="logo_description">Company logo.</string>
     <string name="ic_edit_description">Edit user icon.</string>
     <string name="ic_delete_description">Delete user icon.</string>
+    <string name="ic_confirm_description">Confirm user icon.</string>
+    <string name="ic_cancel_description">Cancel user icon.</string>
+
+    <string name="edit_name_description">Name field.</string>
+    <string name="edit_email_description">Email field.</string>
+    <string name="edit_age_description">Age field.</string>
 </resources>

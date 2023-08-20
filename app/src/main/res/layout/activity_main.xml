@@ -9,16 +9,35 @@
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/customToolbar"
-        android:layout_width="match_parent"
+        android:layout_width="411dp"
         android:layout_height="?attr/actionBarSize"
         android:background="@drawable/rounded_bottom_toolbar"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:padding="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/toolbarImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|center_vertical"
+            android:contentDescription="@string/logo_description"
+            android:scaleType="fitCenter"
+            android:src="@drawable/logo"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="10dp" />
+    </androidx.appcompat.widget.Toolbar>
 
     <ScrollView
+        android:id="@+id/scrollView6"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:layout_marginTop="5dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/customToolbar">
 
