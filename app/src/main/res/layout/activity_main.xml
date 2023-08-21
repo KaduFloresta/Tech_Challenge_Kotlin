@@ -10,7 +10,7 @@
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/customToolbar"
         android:layout_width="0dp"
-        android:layout_height="?attr/actionBarSize"
+        android:layout_height="70dp"
         android:background="@drawable/rounded_bottom_toolbar"
         android:padding="5dp"
         app:layout_constraintBottom_toTopOf="@+id/scrollView6"
@@ -20,12 +20,11 @@
 
         <ImageView
             android:id="@+id/toolbarImage"
-            android:layout_width="wrap_content"
+            android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginEnd="18dp"
             android:contentDescription="@string/logo_description"
-            android:scaleType="centerInside"
+            android:scaleType="centerCrop"
             android:src="@drawable/logo"
             tools:layout_editor_absoluteX="10dp"
             tools:layout_editor_absoluteY="10dp" />
@@ -52,6 +51,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:contentDescription="@string/h_scrollview_description1"
+                android:scrollbars="none"
                 app:layout_constraintHeight_percent="0.2">
 
                 <LinearLayout
@@ -67,6 +67,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:contentDescription="@string/h_scrollview_description2"
+                android:scrollbars="none"
                 app:layout_constraintHeight_percent="0.2"
                 tools:layout_editor_absoluteY="32dp">
 
@@ -83,6 +84,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:contentDescription="@string/h_scrollview_description3"
+                android:scrollbars="none"
                 app:layout_constraintHeight_percent="0.2"
                 tools:layout_editor_absoluteX="190dp"
                 tools:layout_editor_absoluteY="64dp">
@@ -100,6 +102,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:contentDescription="@string/h_scrollview_description4"
+                android:scrollbars="none"
                 app:layout_constraintHeight_percent="0.2"
                 tools:layout_editor_absoluteX="190dp"
                 tools:layout_editor_absoluteY="96dp">
@@ -117,6 +120,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:contentDescription="@string/h_scrollview_description5"
+                android:scrollbars="none"
                 app:layout_constraintHeight_percent="0.2"
                 tools:layout_editor_absoluteX="190dp"
                 tools:layout_editor_absoluteY="128dp">
