@@ -16,7 +16,6 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
         android:layout_marginEnd="10dp"
         android:text="@string/text_dialog_title"
         android:textAlignment="center"
@@ -32,7 +31,7 @@
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
-        android:background="@drawable/border_edit_card"
+        android:background="@drawable/border_card"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -61,9 +60,10 @@
             android:hint="@string/edit_name_description"
             android:inputType="textPersonName"
             android:labelFor="@id/editNameTitle"
-            android:maxLength="25"
+            android:maxLength="50"
             android:minHeight="48dp"
             android:text=""
+
             android:textColor="@color/main_gray"
             android:textSize="18sp" />
 
@@ -88,7 +88,7 @@
             android:autofillHints="emailAddress"
             android:hint="@string/edit_email_description"
             android:inputType="textEmailAddress"
-            android:maxLength="30"
+            android:maxLength="50"
             android:minHeight="48dp"
             android:text=""
             android:textColor="@color/main_gray"
