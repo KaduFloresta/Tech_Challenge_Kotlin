@@ -142,7 +142,7 @@ class MainActivity : AppCompatActivity() {
     private fun editMode(cardBinding: CardLayoutBinding) {
         val dialogBinding = EditCardLayoutBinding.inflate(layoutInflater) // Edit mode dialog
 
-        // Put the data on the fields
+        // Put the current data on the fields
         dialogBinding.editName.setText(cardBinding.textName.text)
         dialogBinding.editEmail.setText(cardBinding.textEmail.text)
         dialogBinding.editAge.setText(cardBinding.textAge.text)
@@ -154,7 +154,7 @@ class MainActivity : AppCompatActivity() {
         // Build the edit mode
         val dialogBuilder = AlertDialog.Builder(this)
             .setView(dialogBinding.root)
-            .setTitle("")
+            .setTitle("Edit User Data")
 
         // Create and show
         val dialog = dialogBuilder.create()
@@ -171,10 +171,6 @@ class MainActivity : AppCompatActivity() {
                 cardBinding.textName.text = newName
                 cardBinding.textEmail.text = newEmail
                 cardBinding.textAge.text = newAge
-
-                // Adjust font to fix
-                adjustFontSize(cardBinding.textName, newName, R.dimen.default_name_text_size)
-                adjustFontSize(cardBinding.textEmail, newEmail, R.dimen.default_email_text_size)
 
                 dialog.dismiss()
             } else {
