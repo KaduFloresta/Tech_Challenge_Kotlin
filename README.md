@@ -11,17 +11,20 @@
 ---
 ### Software Progress
 - [X] Connect to API.
-- [X] Create component to receive the data.
+- [X] Create components to test (Receive data).
 - [X] Data transfer from API.
-- [X] Cards and Scrolls.
-- [ ] Edit implement.
-- [X] Delete implement.
+- [X] Edit method.
+- [X] Delete method.
 - [X] Fix XML alerts.
-- [X] Screen design.
-- [ ] Card design.
-- [ ] Toolbar (Logo).
-- [X] Get the details point by point.
-- [X] Test on an Android device.
+- [X] Screen design (Cards and Scrolls).
+- [X] Card design (Gradient border).
+- [X] Toolbar (Logo and corners).
+- [X] Same or similar Font.
+- [x] Empty fields and exceptions.
+- [X] Font adjust.
+- [X] Success methods toast.
+- [X] Comments.
+- [X] Test on an real Android device.
 ---
 
 # Task Description:
