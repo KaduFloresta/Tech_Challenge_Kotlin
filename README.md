@@ -13,15 +13,15 @@
 - [X] Connect to API.
 - [X] Create components to test (Receive data).
 - [X] Data transfer from API.
-- [X] Edit method.
+- [ ] Edit method.
 - [X] Delete method.
+- [X] Font adjust.
 - [X] Fix XML alerts.
 - [X] Screen design (Cards and Scrolls).
 - [X] Card design (Gradient border).
 - [X] Toolbar (Logo and corners).
 - [X] Same or similar Font.
 - [x] Empty fields and exceptions.
-- [X] Font adjust.
 - [X] Success methods toast.
 - [X] Comments.
 - [X] Test on an real Android device.
