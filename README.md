@@ -9,22 +9,36 @@
 [![Gmail Badge](https://img.shields.io/badge/-cefloresta1@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:cefloresta1@gmail.com)](mailto:cefloresta1@gmail.com)
 
 ---
-### Software Progress
-- [X] Connect to API.
-- [X] Create components to test (Receive data).
-- [X] Data transfer from API.
-- [ ] Edit method.
-- [X] Delete method.
-- [X] Font adjust.
-- [X] Fix XML alerts.
-- [X] Screen design (Cards and Scrolls).
-- [X] Card design (Gradient border).
+## Software Progress
+
+##### Restful API
+- [X] Create API object and interface.
+- [X] Create layout to receive data (test).
+- [X] Data users transfer from API (test).
+
+##### UI
+- [X] Card design.
+- [X] Gradient border.
 - [X] Toolbar (Logo and corners).
-- [X] Same or similar Font.
+- [X] Implement Font.
+- [X] ScrollView.
+- [X] Figma Paramenters.
+- [X] Font adjust.
+- [X] Fix XML alerts
+- [X] Icon desgin.
+
+##### MVVM
+- [X] Create classes.
+- [X] Implement update method.
+- [X] Implement delete method.
+- [X] Delete dialog confirmation. 
 - [x] Empty fields and exceptions.
 - [X] Success methods toast.
-- [X] Comments.
+- [X] Understanding comments.
+
+##### UI Tests
 - [X] Test on an real Android device.
+      
 ---
 
 # Task Description:
