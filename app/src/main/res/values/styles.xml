@@ -18,8 +18,4 @@
     <style name="BoldFontStyle">
         <item name="android:fontFamily">@font/raleway_bold</item>
     </style>
-
-    <style name="SemiBoldFontStyle">
-        <item name="android:fontFamily">@font/raleway_semibold</item>
-    </style>
 </resources>
